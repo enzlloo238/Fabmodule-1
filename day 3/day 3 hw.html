@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <html>
+<head>
+<title>Simple Form</title>
+</head>
+<body> 
+<center>
+<form action="#" method="post" enctype="multipart/form-data">
+Name: <input type="text" name="name" placeholder="Enter your full name" required>
+<br><br>
+Number: <input type="tel" name="number" pattern="[0-9]{10}" placeholder="Enter your mobile number" required>
+<br><br>
+
+Date of Birth: <input type="date" name="dob" required >
+<br><br>
+
+Email: <input type="email" name="email" placeholder="Enter your email" required>
+<br><br>
+
+Occupation:
+<label><input type="checkbox" name="occupation" value="Student"> Student</label>
+<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label><input type="checkbox" name="occupation" value="Employed"> Employed</label>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label><input type="checkbox" name="occupation" value="Other"> Other</label>
+<br><br>
+
+Gender:
+<input type="radio" name="gender" value="male"> male<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="gender" value="female"> female<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="gender" value="other"> not to answer<br><br><br>
+
+
+
+what language do you prefer:
+<select name="languages" required> 
+    <option value="none">select a language</option>
+    <option value="java">JAVA</option>
+    <option value="html">HTML</option>
+    <option value="python">PYTHON</option>
+    <option value="haskell">HASKEll</option>
+</select> <br><br>
+Satisfactory level:
+<input type="range" name="satisfactory level" min="1" max="5" >
+<br>
+<br>
+upload your resume:
+<input type="file" name="resume" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" required>
+<br><br>
+
+Feedback:
+<textarea name="feedback" rows="2" cols="25" placeholder="Enter your feedback here..."></textarea>
+<br><br>    
+<input type="submit" value="Submit">
+
+
+
+</form>
+</center>
+</body>
+</html>
